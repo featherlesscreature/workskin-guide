@@ -1,0 +1,10 @@
+site_name: Featherless's Workskin Guide
+nav:
+  - Home: index.md
+  - Guides:
+    - Custom Fonts: custom-fonts.md
+    - Local Testing: local-testing.md
+    - Text Shadow: shadow.md
+    - Deltarune Specific Guides:
+      - Depths Formatting: gradient.md
+theme: readthedocs
