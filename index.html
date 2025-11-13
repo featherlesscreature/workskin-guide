@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Featherless's Workskin Guide</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Featherless's Workskin Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#creating-a-workskin">Creating a workskin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-formatting">Basic Formatting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#text-highlighting">Text Highlighting</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#types-of-spacing">Types of spacing.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#note-on-compatibility-and-accessibility">Note on Compatibility and Accessibility</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing-your-formatting">Testing your Formatting</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="custom-fonts/">Custom Fonts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="local-testing/">Local Testing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="shadow/">Text Shadow</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deltarune Specific Guides</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="gradient/">Depths Formatting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Featherless's Workskin Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Home</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="workskin-guide">Workskin Guide</h1>
+<p>This guide seeks to explain the basics of ao3 Workskins, and provide guides for specific formatting techniques, with a heavy focus on formatting used for Undertale/Deltarune fics.
+<br>
+Archive of Our Own formats works with <a href="https://www.w3schools.com/html/default.asp">HTML</a>. As a part of this, it allows users to use <a href="https://www.w3schools.com/css/default.asp">CSS</a> to add custom styles using workskins.</p>
+<h2 id="creating-a-workskin">Creating a workskin</h2>
+<p>To create a workskin, click on the 'skins' button on the sidebar. Then, click on the 'My Work Skins' button and click 'Create Work Skin'. From here, you can add your very own CSS rules. To attach a workskin to a work, scroll down to 'Associations' in the Fic creation/edit menu. There will be a box called 'Select work skin'. Click on it, then select your desired skin from the drop down.</p>
+<h2 id="basic-formatting">Basic Formatting</h2>
+<p>CSS rules are added as classes, like so:</p>
+<pre><code class="language-css">#workskin .your-class {
+   /* Rule Goes here */
+}
+</code></pre>
+<p>To apply the rule to your work, simply set the class of any of the tags you wish to be formatted to 'your class'.</p>
+<pre><code class="language-html">&lt;p class=&quot;your-class&quot;&gt;Text formatted with your class!&lt;/p&gt;
+</code></pre>
+<h3 id="text-highlighting">Text Highlighting</h3>
+<p>Highlighting text is one of the most common techniques used. It can be done quite easily.</p>
+<pre><code class="language-css">#workskin .red {
+ color: #ff0033ff;
+}
+</code></pre>
+<p>Then, within the HTML of your work, simply wrap the text you wish to highlight in a 'span' tag.</p>
+<pre><code class="language-html">&lt;span class=&quot;red&quot;&gt;Highlighted Text&lt;/span&gt;
+</code></pre>
+<p style="color: #ff0033ff;">Highlighted Text</p>
+
+<h2 id="types-of-spacing">Types of spacing.</h2>
+<p>CSS provides several distinct types of spacing.</p>
+<table>
+ <tr>
+   <th>Name</th>
+   <th>Explanation</th>
+ </tr>
+ <tr>
+   <th>Pixel (px)</th>
+   <th>Represents one single pixel on the screen.</th>
+ </tr>
+ <tr>
+   <th>Percentage (%)</th>
+   <th>Relative to the size of the parent element</th>
+ </tr>
+ <tr>
+   <th>em</th>
+   <th>Relative to font size</th>
+ </tr>
+ <tr>
+   <th>rem</th>
+   <th>Relative to the font size of the root html element</th>
+ </tr>
+</table>
+
+<h2 id="note-on-compatibility-and-accessibility">Note on Compatibility and Accessibility</h2>
+<p>While it is not possible to make your formatting work for every single person, it is still important to consider accessibility. A large number of people read on mobile phones, so your fic should almost always be tested on mobile. Also try to consider site skins, as these can affect the readability of certain elements, such as coloured text. All guides listed should work on all major platforms and browsers, unless otherwise specified.</p>
+<h2 id="testing-your-formatting">Testing your Formatting</h2>
+<p>If you are on a computer, you can check how your Work Skin will look on mobile by pressing <code>ctrl+shift+m</code> on most browsers.
+<br><br>
+Often, you will want to view how your formatting looks, without dealing with ao3. The simplest way to do this is to test within a draft, however this is both inconvenient and inelegant.
+It is possible to create a <a href="local-testing/">sandbox</a>, which allows you to see how your formatting will look locally.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="custom-fonts/" class="btn btn-neutral float-right" title="Custom Fonts">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="custom-fonts/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-11-13 02:47:47.841436+00:00
+-->

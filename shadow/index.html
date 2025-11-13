@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Text Shadow - Featherless's Workskin Guide</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Text Shadow";
+        var mkdocs_page_input_path = "shadow.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Featherless's Workskin Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Guides</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../custom-fonts/">Custom Fonts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../local-testing/">Local Testing</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Text Shadow</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#additional-applications">Additional Applications</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#glow">Glow</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#outlines">Outlines</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deltarune Specific Guides</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../gradient/">Depths Formatting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Featherless's Workskin Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Guides</li>
+      <li class="breadcrumb-item active">Text Shadow</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="text-shadow">Text Shadow</h1>
+<p>The Text shadow CSS rule is exceptionally useful. The primary use is to add a shadow to text:</p>
+<pre><code class="language-css">#workskin .shadow {
+ text-shadow: 1px 1px 0 #000000ff;
+}
+</code></pre>
+<p style="text-shadow: 1px 1px 0 #000000ff">Shadowed Text</p>
+
+<p><code>text-shadow</code> has four settings, the x offset, the y offset, the intensity of the blur, and the color of the shadow. By default, the colour will be set to the colour of the text.
+Additional shadows can be added, separated by commas.</p>
+<pre><code class="language-css">#workskin .shadow {
+ text-shadow: 1px 1px 0 #000000ff, -1px -1px 0 #ff0000ff;
+}
+</code></pre>
+<p style="text-shadow: 1px 1px 0 #000000ff, -1px -1px 0 #ff0000ff">Shadowed Text</p>
+
+<h2 id="additional-applications">Additional Applications</h2>
+<h3 id="glow">Glow</h3>
+<p><code>text-shadow</code> can be used with a very high blur radius to give text the appearance of 'glowing'.</p>
+<pre><code class="language-css">#workskin .shadow {
+ color: #ff0000ff;
+ text-shadow: 0 0 1.5em;
+}
+</code></pre>
+<p style="color: #ff0000ff; text-shadow: 0 0 1.5em">Glowing Text</p>
+<h3 id="outlines">Outlines</h3>
+<p>By adding several <code>text-shadow</code> effects, text can be outlined.</p>
+<pre><code class="language-css">#workskin .outline {
+ text-shadow: -1px -1px 0 #000000ff, 1px -1px 0 #000000ff,
+     -1px 1px 0 #000000ff, 1px 1px 0 #000000ff;
+ color: white;
+}
+</code></pre>
+<p style="text-shadow: -1px -1px 0 #000000ff, 1px -1px 0 #000000ff, -1px 1px 0 #000000ff, 1px 1px 0 #000000ff; color: white;">Outlined Text</p>
+
+<p>One small problem with this approach is that there are noticeable gaps in the text. This cannot be fully solved, however adding a small amount of blur helps lessen the issue.</p>
+<pre><code class="language-css">#workskin .outline {
+ text-shadow: -1px -1px 1px #000000ff, 1px -1px 1px #000000ff,
+     -1px 1px 1px #000000ff, 1px 1px 1px #000000ff;
+ color: white;
+}
+</code></pre>
+<p style="text-shadow: -1px -1px 1px #000000ff, 1px -1px 1px #000000ff, -1px 1px 1px #000000ff, 1px 1px 1px #000000ff; color: white;">Outlined Text</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../local-testing/" class="btn btn-neutral float-left" title="Local Testing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gradient/" class="btn btn-neutral float-right" title="Depths Formatting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../local-testing/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../gradient/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
