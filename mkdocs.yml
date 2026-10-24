@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - Guides:
     - Custom Fonts: custom-fonts.md
+#   - External Fonts: external-fonts.md
     - Local Testing: local-testing.md
     - Text Shadow: shadow.md
     - Deltarune Specific Guides:
